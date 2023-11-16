@@ -47,6 +47,7 @@ body {
 }
 
 .number {
+    font-size: 1.1rem;
     color: var(--Light-Grey);
     border: none;
     background-color: var(--secondary);
@@ -63,11 +64,12 @@ body {
 .card_main {
     display: grid;
     margin: auto;
-    max-width: 35%;
+    max-width: 30%;
     background: linear-gradient(180deg, hsl(213, 19%, 18%), hsl(213, 31%, 13%) 80%);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 15px;
     padding: 2rem;
+    gap: 10px;
 }
 
 h2 {
@@ -96,4 +98,30 @@ p {
 .btn_submit:hover {
     background-color: var(--White);
     color: var(--Orange);
+}
+
+
+.card_thank {
+    visibility: hidden;
+    margin: auto;
+    max-width: 30%;
+    background: linear-gradient(180deg, hsl(213, 19%, 18%), hsl(213, 31%, 13%) 80%);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 15px;
+    padding: 2rem;
+    gap: 15px;
+    text-align: center;
+}
+
+.img_thank {
+    margin: auto;
+}
+
+.rating_result p {
+    color: var(--Orange);
+    background-color: var(--secondary);
+    border-radius: 100px;
+    max-width: 60%;
+    margin: auto;
+    padding: 10px;
 }
