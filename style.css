@@ -20,6 +20,11 @@
 
 body {
     background-color: var(--Very-Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-inline: 2.4rem;
 
 }
 
@@ -58,19 +63,34 @@ body {
     padding: 1rem;
 }
 
+.number:hover {
+    background: var(--Orange);
+    color: var(--White);
+  }
+
+.active_score {
+    background-color: #7c8798;
+    color: var(--White);
+  }
+
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 .card_main {
-    display: grid;
+    display: none;
     margin: auto;
-    max-width: 30%;
+    max-width: 50%;
     background: linear-gradient(180deg, hsl(213, 19%, 18%), hsl(213, 31%, 13%) 80%);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 15px;
     padding: 2rem;
     gap: 10px;
 }
+
+.card_main.show_rating {
+    display: grid;
+  }
 
 h2 {
     color: var(--White);
@@ -102,16 +122,20 @@ p {
 
 
 .card_thank {
-    visibility: hidden;
     margin: auto;
-    max-width: 30%;
+    max-width: 50%;
     background: linear-gradient(180deg, hsl(213, 19%, 18%), hsl(213, 31%, 13%) 80%);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 15px;
     padding: 2rem;
     gap: 15px;
     text-align: center;
+    display: none;
 }
+
+.card_thank.showThankyou {
+    display: grid;
+  }
 
 .img_thank {
     margin: auto;
